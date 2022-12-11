@@ -2,7 +2,7 @@
 name = "test_prefect"
 version = "0.1.0"
 authors = ["mahiki <mahiki@users.noreply.github.com>"]
-description = ""
+description = "A bare prefect repo to test deployment features"
 readme = "README.md"
 packages = [{include = "src"}]
 
@@ -10,7 +10,7 @@ packages = [{include = "src"}]
 python = "^3.10"
 prefect = "^2.7"
 pathlib = "^1.0.1"
-greenlet = "1.1.3.post0"
+greenlet = "^2.0.1"
 
 [build-system]
 requires = ["poetry-core"]

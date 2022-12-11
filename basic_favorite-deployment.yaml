@@ -1,0 +1,43 @@
+###
+### A complete description of a Prefect Deployment for flow 'basic-favorite'
+###
+name: TEST DEPLOYMENT STORAGE
+description: null
+version: b3f7e2c28460124965b8e3a8178c6959
+# The work queue that will handle this deployment's runs
+work_queue_name: test
+tags: []
+parameters: {}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: basic-favorite
+manifest_path: null
+storage:
+  basepath: /Users/merlinr/.prefect_test/prefect-test-storage
+  _block_document_id: 55a58c9e-72a3-4cfc-8327-4d4e07c5bfd1
+  _block_document_name: local-storage
+  _is_anonymous: false
+  block_type_slug: local-file-system
+  _block_type_slug: local-file-system
+path: deploy_test
+entrypoint: src/basic_flow.py:basic_favorite
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
